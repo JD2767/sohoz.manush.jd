@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>লগইন - মানুষ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- Google Fonts - Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">সেবাসমূহ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/providers.html">সেবা প্রদানকারী</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                    <div class="language-switch">
+                        <button class="btn btn-sm btn-outline-light active" data-lang="bn">বাংলা</button>
+                        <button class="btn btn-sm btn-outline-light" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="/login.html" class="btn btn-outline-light me-2">লগইন</a>
+                        <a href="/register.html" class="btn btn-primary">রেজিস্ট্রেশন</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো">
+                    <h2>লগইন করুন</h2>
+                    <p>আপনার একাউন্টে প্রবেশ করুন</p>
+                </div>
+                
+                <form class="auth-form needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="username">ইউজারনেম বা ইমেইল</label>
+                        <input type="text" class="form-control" id="username" placeholder="ইউজারনেম বা ইমেইল লিখুন" required>
+                        <div class="invalid-feedback">
+                            ইউজারনেম বা ইমেইল দিতে হবে
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">পাসওয়ার্ড</label>
+                        <input type="password" class="form-control" id="password" placeholder="পাসওয়ার্ড লিখুন" required>
+                        <div class="invalid-feedback">
+                            পাসওয়ার্ড দিতে হবে
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="remember_me">
+                            <label class="form-check-label" for="remember_me">
+                                আমাকে মনে রাখুন
+                            </label>
+                        </div>
+                        <div>
+                            <a href="/forgot-password.html">পাসওয়ার্ড ভুলে গেছেন?</a>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">লগইন করুন</button>
+                </form>
+                
+                <div class="auth-footer">
+                    <p>একাউন্ট নেই? <a href="/register.html">রেজিস্ট্রেশন করুন</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <img src="/public/images/manush-logo-white.png" alt="মানুষ লোগো" class="footer-logo">
+                        <p>মানুষ হল ঢাকার সুত্রাপুর, গেন্ডারিয়া, যাত্রাবাড়ি এলাকার জন্য একটি অনলাইন সেবা প্ল্যাটফর্ম, যেখানে সেবা প্রদানকারী ও গ্রহণকারীরা সহজেই সংযোগ স্থাপন করতে পারেন।</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h3>দ্রুত লিঙ্ক</h3>
+                        <ul>
+                            <li><a href="/">হোম</a></li>
+                            <li><a href="/services.html">সেবাসমূহ</a></li>
+                            <li><a href="/providers.html">সেবা প্রদানকারী</a></li>
+                            <li><a href="/about.html">আমাদের সম্পর্কে</a></li>
+                            <li><a href="/contact.html">যোগাযোগ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h3>সেবাসমূহ</h3>
+                        <ul>
+                            <li><a href="/services.html?category=electrician">ইলেকট্রিশিয়ান</a></li>
+                            <li><a href="/services.html?category=plumber">প্লাম্বার</a></li>
+                            <li><a href="/services.html?category=carpenter">ফার্নিচার মিস্ত্রি</a></li>
+                            <li><a href="/services.html?category=painter">রংমিস্ত্রি</a></li>
+                            <li><a href="/services.html?category=cleaner">পরিচ্ছন্নতাকর্মী</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h3>যোগাযোগ করুন</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> সুত্রাপুর, ঢাকা-১১০০, বাংলাদেশ</p>
+                        <p><i class="fas fa-phone-alt"></i> +৮৮০১৯৭৭৭৭২৭৬৭</p>
+                        <p><i class="fas fa-envelope"></i> info@manush.com.bd</p>
+                        <div class="newsletter">
+                            <h4>নিউজলেটার</h4>
+                            <form>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="আপনার ইমেইল">
+                                    <button class="btn btn-primary" type="submit">সাবস্ক্রাইব</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; ২০২৫ মানুষ। সর্বস্বত্ব সংরক্ষিত।</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>
+                            <a href="/terms.html">ব্যবহারের শর্তাবলী</a> |
+                            <a href="/privacy.html">গোপনীয়তা নীতি</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

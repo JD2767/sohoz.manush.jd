@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সেবা বিবরণ - মানুষ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- Google Fonts - Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/services.html">সেবাসমূহ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/providers.html">সেবা প্রদানকারী</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                    <div class="language-switch">
+                        <button class="btn btn-sm btn-outline-light active" data-lang="bn">বাংলা</button>
+                        <button class="btn btn-sm btn-outline-light" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="/login.html" class="btn btn-outline-light me-2">লগইন</a>
+                        <a href="/register.html" class="btn btn-primary">রেজিস্ট্রেশন</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Service Details Section -->
+    <section class="service-details-section">
+        <div class="container">
+            <div class="row">
+                <!-- Service Details -->
+                <div class="col-lg-8">
+                    <div class="service-details">
+                        <div class="service-images">
+                            <div class="main-image">
+                                <img src="/public/images/service-1.jpg" alt="ইলেকট্রিক্যাল সার্ভিস" id="main-service-image">
+                            </div>
+                            <div class="thumbnail-images">
+                                <img src="/public/images/service-1.jpg" alt="ইলেকট্রিক্যাল সার্ভিস" class="active" onclick="changeImage(this.src)">
+                                <img src="/public/images/service-1-2.jpg" alt="ইলেকট্রিক্যাল সার্ভিস" onclick="changeImage(this.src)">
+                                <img src="/public/images/service-1-3.jpg" alt="ইলেকট্রিক্যাল সার্ভিস" onclick="changeImage(this.src)">
+                            </div>
+                        </div>
+                        
+                        <div class="service-info">
+                            <h1>বাসা-বাড়ি ও অফিসের ইলেকট্রিক্যাল সার্ভিস</h1>
+                            <div class="service-meta">
+                                <div>
+                                    <i class="fas fa-map-marker-alt"></i> সুত্রাপুর
+                                </div>
+                                <div>
+                                    <i class="fas fa-star"></i> ৪.৫ (১২৮ রিভিউ)
+                                </div>
+                                <div>
+                                    <i class="fas fa-eye"></i> ৫৬০ বার দেখা হয়েছে
+                                </div>
+                            </div>
+                            
+                            <div class="service-price">
+                                <span class="price">৫০০ ৳</span>
+                                <span class="price-note">(সার্ভিস ফি ৫ ৳ অতিরিক্ত)</span>
+                            </div>
+                            
+                            <div class="service-description">
+                                <h3>সেবার বিবরণ</h3>
+                                <p>বাসা-বাড়ি, অফিস কিংবা যেকোনো স্থাপনায় বিদ্যুতের কাজ, যেমন - নতুন সংযোগ স্থাপন, তার মেরামত, বৈদ্যুতিক সরঞ্জাম স্থাপন ও মেরামত ইত্যাদি। আমাদের অভিজ্ঞ ইলেকট্রিশিয়ানরা আপনার সকল ধরনের বৈদ্যুতিক সমস্যা সমাধান করবে।</p>
+                                
+                                <h4>সেবার অন্তর্ভুক্ত বিষয়সমূহ:</h4>
+                                <ul>
+                                    <li>বাসা-বাড়ির ইলেকট্রিক্যাল ওয়্যারিং</li>
+                                    <li>ইলেকট্রিক্যাল সার্কিট ডিজাইন ও স্থাপন</li>
+                                    <li>ইলেকট্রিক্যাল সমস্যা সমাধান</li>
+                                    <li>বৈদ্যুতিক সরঞ্জাম স্থাপন ও মেরামত</li>
+                                    <li>সার্কিট ব্রেকার স্থাপন ও মেরামত</li>
+                                    <li>ফ্যান ও লাইট ফিটিং</li>
+                                    <li>ইলেকট্রিক্যাল সেফটি চেক</li>
+                                </ul>
+                                
+                                <h4>সেবা প্রদানের সময়:</h4>
+                                <p>সকাল ৮:০০ থেকে রাত ৮:০০ পর্যন্ত, সপ্তাহের ৭ দিন</p>
+                                
+                                <h4>সেবা প্রদানের এলাকা:</h4>
+                                <p>সুত্রাপুর, গেন্ডারিয়া, যাত্রাবাড়ি</p>
+                            </div>
+                            
+                            <div class="service-booking">
+                                <a href="/payment.html" class="btn btn-primary btn-lg">বুকিং করুন</a>
+                                <button class="btn btn-outline-primary btn-lg ms-2"><i class="fas fa-heart"></i> পছন্দের তালিকায় যোগ করুন</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Provider Info -->
+                        <div class="provider-info">
+                            <h3>সেবা প্রদানকারী</h3>
+                            <div class="provider-profile">
+                                <img src="/public/images/provider-1.jpg" alt="করিম মিয়া">
+                                <div>
+                                    <h4>করিম মিয়া</h4>
+                                    <p>ইলেকট্রিশিয়ান</p>
+                                    <div class="provider-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span>৪.৫</span>
+                                    </div>
+                                    <p>৫ বছরের অভিজ্ঞতা</p>
+                                    <a href="/provider-profile.html" class="btn btn-outline-primary">প্রোফাইল দেখুন</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reviews -->
+                        <div class="service-reviews">
+                            <h3>রিভিউ (১২৮)</h3>
+                            
+                            <div class="review-summary">
+                                <div class="overall-rating">
+                                    <h2>৪.৫</h2>
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p>১২৮ রিভিউ</p>
+                                </div>
+                                <div class="rating-bars">
+                                    <div class="rating-bar-item">
+                                        <div class="d-flex align-items-center">
+                                            <span>৫ স্টার</span>
+                                            <div class="progress mx-3 flex-grow-1">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>৭৫%</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <div class="d-flex align-items-center">
+                                            <span>৪ স্টার</span>
+                                            <div class="progress mx-3 flex-grow-1">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>১৫%</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <div class="d-flex align-items-center">
+                                            <span>৩ স্টার</span>
+                                            <div class="progress mx-3 flex-grow-1">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 7%" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>৭%</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <div class="d-flex align-items-center">
+                                            <span>২ স্টার</span>
+                                            <div class="progress mx-3 flex-grow-1">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>২%</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <div class="d-flex align-items-center">
+                                            <span>১ স্টার</span>
+                                            <div class="progress mx-3 flex-grow-1">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>১%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reviews-list">
+                                <!-- Review Item 1 -->
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <img src="/public/images/user-1.jpg" alt="ইউজার">
+                                        <div>
+                                            <h4>আনিসুল হক</h4>
+                                            <div class="review-date">১০ এপ্রিল, ২০২৫</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>করিম মিয়া খুব দক্ষতার সাথে আমার বাসার ইলেকট্রিক্যাল সমস্যা সমাধান করেছেন। তিনি সময়মত এসেছিলেন এবং কাজ শেষ করে সব পরিষ্কার করে গেছেন। আমি তার সেবায় খুবই সন্তুষ্ট।</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Review Item 2 -->
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <img src="/public/images/user-2.jpg" alt="ইউজার">
+                                        <div>
+                                            <h4>ফারহানা আক্তার</h4>
+                                            <div class="review-date">৫ এপ্রিল, ২০২৫</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>আমার অফিসের ইলেকট্রিক্যাল ওয়্যারিং সমস্যা ছিল। করিম মিয়া খুব দ্রুত সমস্যা শনাক্ত করে সমাধান করে দিয়েছেন। তিনি খুব পেশাদার এবং দক্ষ।</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Review Item 3 -->
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <img src="/public/images/user-3.jpg" alt="ইউজার">
+                                        <div>
+                                            <h4>মাহমুদুল হাসান</h4>
+                                            <div class="review-date">২৮ মার্চ, ২০২৫</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                          
+(Content truncated due to size limit. Use line ranges to read in chunks)

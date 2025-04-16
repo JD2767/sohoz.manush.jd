@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সেবা প্রদানকারী প্রোফাইল - মানুষ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- Google Fonts - Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">সেবাসমূহ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/providers.html">সেবা প্রদানকারী</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                    <div class="language-switch">
+                        <button class="btn btn-sm btn-outline-light active" data-lang="bn">বাংলা</button>
+                        <button class="btn btn-sm btn-outline-light" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="/login.html" class="btn btn-outline-light me-2">লগইন</a>
+                        <a href="/register.html" class="btn btn-primary">রেজিস্ট্রেশন</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Provider Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="profile-info">
+                            <div class="profile-avatar">
+                                <img src="/public/images/provider-1.jpg" alt="করিম মিয়া">
+                            </div>
+                            <div class="profile-details">
+                                <h2>করিম মিয়া</h2>
+                                <p class="profile-category">ইলেকট্রিশিয়ান</p>
+                                <div class="profile-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>৪.৫ (১২৮ রিভিউ)</span>
+                                </div>
+                                <div class="profile-meta">
+                                    <div>
+                                        <i class="fas fa-map-marker-alt"></i> সুত্রাপুর, ঢাকা
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-briefcase"></i> ৫ বছরের অভিজ্ঞতা
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-tasks"></i> ১৫০+ কাজ সম্পন্ন
+                                    </div>
+                                </div>
+                                <div class="profile-verification">
+                                    <span class="badge bg-success"><i class="fas fa-check-circle"></i> যাচাইকৃত</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <div class="profile-actions">
+                            <a href="#" class="btn btn-primary"><i class="fas fa-calendar-check"></i> বুকিং করুন</a>
+                            <a href="#" class="btn btn-outline-primary ms-2"><i class="fas fa-comment"></i> মেসেজ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profile Tabs -->
+            <div class="profile-tabs">
+                <ul class="nav nav-tabs" id="profileTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="about-tab" data-bs-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">সম্পর্কে</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="services-tab" data-bs-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">সেবাসমূহ</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">রিভিউ</a>
+                    </li>
+                </ul>
+                <div class="tab-content profile-tab-content" id="profileTabContent">
+                    <!-- About Tab -->
+                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                        <h3>পরিচিতি</h3>
+                        <p>আমি করিম মিয়া, একজন অভিজ্ঞ ইলেকট্রিশিয়ান। আমি গত ৫ বছর ধরে ঢাকার বিভিন্ন এলাকায় ইলেকট্রিক্যাল সার্ভিস প্রদান করে আসছি। আমি বাসা-বাড়ি, অফিস কিংবা যেকোনো স্থাপনায় বিদ্যুতের কাজ, যেমন - নতুন সংযোগ স্থাপন, তার মেরামত, বৈদ্যুতিক সরঞ্জাম স্থাপন ও মেরামত ইত্যাদি কাজে দক্ষ।</p>
+                        <p>আমি সর্বদা নিরাপত্তা নিশ্চিত করে কাজ করি এবং গ্রাহকের সন্তুষ্টিকে সর্বোচ্চ প্রাধান্য দিয়ে থাকি। আমার কাজের মান ও দক্ষতার প্রমাণ হিসেবে আমার ১২৮টি ইতিবাচক রিভিউ রয়েছে।</p>
+                        
+                        <h3 class="mt-4">দক্ষতা</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="skills-list">
+                                    <li>বাসা-বাড়ির ইলেকট্রিক্যাল ওয়্যারিং</li>
+                                    <li>ইলেকট্রিক্যাল সার্কিট ডিজাইন</li>
+                                    <li>ইলেকট্রিক্যাল সমস্যা সমাধান</li>
+                                    <li>বৈদ্যুতিক সরঞ্জাম স্থাপন</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="skills-list">
+                                    <li>বৈদ্যুতিক সরঞ্জাম মেরামত</li>
+                                    <li>সার্কিট ব্রেকার স্থাপন</li>
+                                    <li>ফ্যান ও লাইট ফিটিং</li>
+                                    <li>ইলেকট্রিক্যাল সেফটি চেক</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h3 class="mt-4">শিক্ষা ও প্রশিক্ষণ</h3>
+                        <ul class="education-list">
+                            <li>
+                                <div class="education-item">
+                                    <h4>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং ডিপ্লোমা</h4>
+                                    <p>ঢাকা পলিটেকনিক ইনস্টিটিউট, ২০১৮</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="education-item">
+                                    <h4>ইলেকট্রিক্যাল সেফটি সার্টিফিকেট</h4>
+                                    <p>বাংলাদেশ টেকনিক্যাল এডুকেশন বোর্ড, ২০১৯</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Services Tab -->
+                    <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                        <div class="row">
+                            <!-- Service Item 1 -->
+                            <div class="col-md-6">
+                                <div class="service-card">
+                                    <div class="service-image">
+                                        <img src="/public/images/service-1.jpg" alt="ইলেকট্রিক্যাল সার্ভিস">
+                                    </div>
+                                    <div class="service-info">
+                                        <h3><a href="/service-details.html?id=1">বাসা-বাড়ি ও অফিসের ইলেকট্রিক্যাল সার্ভিস</a></h3>
+                                        <div class="service-meta">
+                                            <div>
+                                                <i class="fas fa-map-marker-alt"></i> সুত্রাপুর
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-star"></i> ৪.৫ (১২৮ রিভিউ)
+                                            </div>
+                                        </div>
+                                        <p>বাসা-বাড়ি, অফিস কিংবা যেকোনো স্থাপনায় বিদ্যুতের কাজ, যেমন - নতুন সংযোগ স্থাপন, তার মেরামত, বৈদ্যুতিক সরঞ্জাম স্থাপন ও মেরামত ইত্যাদি।</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="service-price">
+                                                ৫০০ ৳
+                                            </div>
+                                            <a href="/service-details.html?id=1" class="btn btn-primary">বিস্তারিত দেখুন</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Service Item 2 -->
+                            <div class="col-md-6">
+                                <div class="service-card">
+                                    <div class="service-image">
+                                        <img src="/public/images/service-6.jpg" alt="ফ্যান ও লাইট ফিটিং">
+                                    </div>
+                                    <div class="service-info">
+                                        <h3><a href="/service-details.html?id=6">ফ্যান ও লাইট ফিটিং সার্ভিস</a></h3>
+                                        <div class="service-meta">
+                                            <div>
+                                                <i class="fas fa-map-marker-alt"></i> সুত্রাপুর
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-star"></i> ৪.৮ (৯২ রিভিউ)
+                                            </div>
+                                        </div>
+                                        <p>সিলিং ফ্যান, টেবিল ফ্যান, এক্সজস্ট ফ্যান, লাইট, চান্দেলিয়ার ইত্যাদি স্থাপন ও মেরামত করা।</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="service-price">
+                                                ৩০০ ৳
+                                            </div>
+                                            <a href="/service-details.html?id=6" class="btn btn-primary">বিস্তারিত দেখুন</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Service Item 3 -->
+                            <div class="col-md-6">
+                                <div class="service-card">
+                                    <div class="service-image">
+                                        <img src="/public/images/service-7.jpg" alt="সার্কিট ব্রেকার">
+                                    </div>
+                                    <div class="service-info">
+                                        <h3><a href="/service-details.html?id=7">সার্কিট ব্রেকার স্থাপন ও মেরামত</a></h3>
+                                        <div class="service-meta">
+                                            <div>
+                                                <i class="fas fa-map-marker-alt"></i> সুত্রাপুর
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-star"></i> ৪.৬ (৭৫ রিভিউ)
+                                            </div>
+                                        </div>
+                                        <p>সার্কিট ব্রেকার, MCB, MCCB, RCCB ইত্যাদি স্থাপন ও মেরামত করা।</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="service-price">
+                                                ৪০০ ৳
+                                            </div>
+                                            <a href="/service-details.html?id=7" class="btn btn-primary">বিস্তারিত দেখুন</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews Tab -->
+                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <div class="reviews-summary mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center">
+                                    <div class="overall-rating">
+                                        <h2>৪.৫</h2>
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <p>১২৮ রিভিউ</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="rating-bars">
+                                        <div class="rating-bar-item">
+       
+(Content truncated due to size limit. Use line ranges to read in chunks)

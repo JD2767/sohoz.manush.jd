@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মানুষ - সেবা প্রদানকারী ও গ্রহণকারীদের জন্য প্ল্যাটফর্ম</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- Google Fonts - Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">সেবাসমূহ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/providers.html">সেবা প্রদানকারী</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                    <div class="language-switch">
+                        <button class="btn btn-sm btn-outline-light active" data-lang="bn">বাংলা</button>
+                        <button class="btn btn-sm btn-outline-light" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="/login.html" class="btn btn-outline-light me-2">লগইন</a>
+                        <a href="/register.html" class="btn btn-primary">রেজিস্ট্রেশন</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>ঢাকার সুত্রাপুর, গেন্ডারিয়া, যাত্রাবাড়ি এলাকার জন্য সেবা প্ল্যাটফর্ম</h1>
+                        <p>মানুষ হল একটি অনলাইন প্ল্যাটফর্ম যেখানে সেবা প্রদানকারী ও গ্রহণকারীরা সহজেই সংযোগ স্থাপন করতে পারেন। আপনার প্রয়োজনীয় সেবা খুঁজুন অথবা আপনার দক্ষতা দিয়ে অন্যদের সাহায্য করুন।</p>
+                        <div class="hero-buttons">
+                            <a href="/services.html" class="btn btn-primary btn-lg">সেবা খুঁজুন</a>
+                            <a href="/register.html?type=provider" class="btn btn-outline-light btn-lg">সেবা প্রদানকারী হিসেবে যোগ দিন</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-search">
+                        <h2>আপনার প্রয়োজনীয় সেবা খুঁজুন</h2>
+                        <form class="search-form">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="কী ধরনের সেবা খুঁজছেন?">
+                                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <select class="form-select" aria-label="সেবার ধরন">
+                                        <option selected>সেবার ধরন</option>
+                                        <option value="electrician">ইলেকট্রিশিয়ান</option>
+                                        <option value="plumber">প্লাম্বার</option>
+                                        <option value="carpenter">কার্পেন্টার</option>
+                                        <option value="painter">পেইন্টার</option>
+                                        <option value="cleaner">ক্লিনার</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select class="form-select" aria-label="এলাকা">
+                                        <option selected>এলাকা</option>
+                                        <option value="sutrapur">সুত্রাপুর</option>
+                                        <option value="gendaria">গেন্ডারিয়া</option>
+                                        <option value="jatrabari">যাত্রাবাড়ি</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">খুঁজুন</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>সেবার ধরন</h2>
+                <p>আমাদের প্ল্যাটফর্মে বিভিন্ন ধরনের সেবা রয়েছে</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>ইলেকট্রিশিয়ান</h3>
+                        <p>বাসা-বাড়ি ও অফিসের ইলেকট্রিক্যাল সমস্যা সমাধান</p>
+                        <a href="/services.html?category=electrician" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-faucet"></i>
+                        </div>
+                        <h3>প্লাম্বার</h3>
+                        <p>পানি সরবরাহ ও সেনিটারি সমস্যা সমাধান</p>
+                        <a href="/services.html?category=plumber" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>কার্পেন্টার</h3>
+                        <p>ফার্নিচার তৈরি ও মেরামত</p>
+                        <a href="/services.html?category=carpenter" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>পেইন্টার</h3>
+                        <p>বাসা-বাড়ি ও অফিসের রং করা</p>
+                        <a href="/services.html?category=painter" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3>ক্লিনার</h3>
+                        <p>বাসা-বাড়ি ও অফিসের পরিষ্কার-পরিচ্ছন্নতা</p>
+                        <a href="/services.html?category=cleaner" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>ট্রান্সপোর্ট</h3>
+                        <p>মালামাল পরিবহন ও স্থানান্তর</p>
+                        <a href="/services.html?category=transport" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>কম্পিউটার সার্ভিস</h3>
+                        <p>কম্পিউটার ও ল্যাপটপ মেরামত</p>
+                        <a href="/services.html?category=computer" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>হোম কুকিং</h3>
+                        <p>বাসায় রান্না করে দেওয়া</p>
+                        <a href="/services.html?category=cooking" class="btn btn-outline-primary">সেবা দেখুন</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="/services.html" class="btn btn-primary">সকল সেবা দেখুন</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>কিভাবে কাজ করে</h2>
+                <p>মানুষ প্ল্যাটফর্মে সেবা পাওয়া খুবই সহজ</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="step-card">
+                        <div class="step-number">১</div>
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>সেবা খুঁজুন</h3>
+                        <p>আপনার প্রয়োজনীয় সেবা খুঁজুন এবং সেবা প্রদানকারীদের প্রোফাইল দেখুন</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="step-card">
+                        <div class="step-number">২</div>
+                        <div class="step-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>বুকিং করুন</h3>
+                        <p>আপনার পছন্দের সেবা প্রদানকারীকে বেছে নিন এবং সেবার জন্য বুকিং করুন</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="step-card">
+                        <div class="step-number">৩</div>
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>সেবা গ্রহণ করুন</h3>
+                        <p>সেবা প্রদানকারী আপনার বাসায় এসে সেবা প্রদান করবেন</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section class="featured-services-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>জনপ্রিয় সেবাসমূহ</h2>
+                <p>আমাদের প্ল্যাটফর্মের সবচেয়ে জনপ্রিয় সেবাসমূহ</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/public/images/service-1.jpg" alt="ইলেকট্রিক্যাল সার্ভিস">
+                            <div class="service-price">৫০০ ৳</div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>৪.৫ (১২৮)</span>
+                            </div>
+                            <h3><a href="/service-details.html?id=1">বাসা-বাড়ি ও অফিসের ইলেকট্রিক্যাল সার্ভিস</a></h3>
+                            <div class="service-provider">
+                                <img src="/public/images/provider-1.jpg" alt="করিম মিয়া">
+                                <span>করিম মিয়া</span>
+                            </div>
+                            <div class="service-location">
+                                <i class="fas fa-map-marker-alt"></i> সুত্রাপুর
+                            </div>
+                            <a href="/service-details.html?id=1" class="btn btn-primary w-100">বিস্তারিত দেখুন</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/public/images/service-2.jpg" alt="প্লাম্বিং সার্ভিস">
+                            <div class="service-price">৪০০ ৳</div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>৪.০ (৯৬)</span>
+                            </div>
+                            <h3><a href="/service-details.html?id=2">প্লাম্বিং সার্ভিস</a></h3>
+                            <div class="service-provider">
+                                <img src="/public/images/provider-2.jpg" alt="রহিম শেখ">
+                                <span>রহিম শেখ</span>
+                            </div>
+                            <div class="service-location">
+                                <i class="fas fa-map-marker-alt"></i> গেন্ডারিয়া
+                            </div>
+                            <a href="/service-details.html?id=2" class="btn btn-primary w-100">বিস্তারিত দেখুন</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/public/images/service-3.jpg" alt="এসি সার্ভিসিং">
+                           
+(Content truncated due to size limit. Use line ranges to read in chunks)

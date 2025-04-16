@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সেবাসমূহ - মানুষ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- Google Fonts - Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/services.html">সেবাসমূহ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/providers.html">সেবা প্রদানকারী</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                    <div class="language-switch">
+                        <button class="btn btn-sm btn-outline-light active" data-lang="bn">বাংলা</button>
+                        <button class="btn btn-sm btn-outline-light" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="/login.html" class="btn btn-outline-light me-2">লগইন</a>
+                        <a href="/register.html" class="btn btn-primary">রেজিস্ট্রেশন</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-content text-center">
+                        <h1>সেবাসমূহ</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="/">হোম</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">সেবাসমূহ</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="row">
+                <!-- Filter Sidebar -->
+                <div class="col-lg-3">
+                    <div class="filter-sidebar">
+                        <h3>ফিল্টার</h3>
+                        
+                        <div class="filter-group">
+                            <h4>এলাকা</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="sutrapur" id="area_sutrapur">
+                                <label class="form-check-label" for="area_sutrapur">
+                                    সুত্রাপুর
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="gendaria" id="area_gendaria">
+                                <label class="form-check-label" for="area_gendaria">
+                                    গেন্ডারিয়া
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="jatrabari" id="area_jatrabari">
+                                <label class="form-check-label" for="area_jatrabari">
+                                    যাত্রাবাড়ি
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>সেবার ধরন</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="electrician" id="category_electrician">
+                                <label class="form-check-label" for="category_electrician">
+                                    ইলেকট্রিশিয়ান
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="plumber" id="category_plumber">
+                                <label class="form-check-label" for="category_plumber">
+                                    প্লাম্বার
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="carpenter" id="category_carpenter">
+                                <label class="form-check-label" for="category_carpenter">
+                                    ফার্নিচার মিস্ত্রি
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="painter" id="category_painter">
+                                <label class="form-check-label" for="category_painter">
+                                    রংমিস্ত্রি
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="cleaner" id="category_cleaner">
+                                <label class="form-check-label" for="category_cleaner">
+                                    পরিচ্ছন্নতাকর্মী
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="gas_mechanic" id="category_gas_mechanic">
+                                <label class="form-check-label" for="category_gas_mechanic">
+                                    গ্যাস মিস্ত্রি
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="ac_mechanic" id="category_ac_mechanic">
+                                <label class="form-check-label" for="category_ac_mechanic">
+                                    এসি মেকানিক
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="cook" id="category_cook">
+                                <label class="form-check-label" for="category_cook">
+                                    বাবুর্চি
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="domestic_helper" id="category_domestic_helper">
+                                <label class="form-check-label" for="category_domestic_helper">
+                                    গৃহকর্মী
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="mobile_technician" id="category_mobile_technician">
+                                <label class="form-check-label" for="category_mobile_technician">
+                                    মোবাইল টেকনিশিয়ান
+                                </label>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="show-more">আরও দেখুন</a>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>মূল্য সীমা</h4>
+                            <div class="price-range">
+                                <input type="range" class="form-range" min="0" max="5000" step="100" id="price_range" value="2000">
+                                <div class="d-flex justify-content-between">
+                                    <span>০ ৳</span>
+                                    <span id="price_range_value">২০০০ ৳</span>
+                                    <span>৫০০০ ৳</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>রেটিং</h4>
+                            <div class="rating-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_all" value="0" checked>
+                                    <label class="form-check-label" for="rating_all">
+                                        সব
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_4plus" value="4">
+                                    <label class="form-check-label" for="rating_4plus">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        এবং উপরে
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_3plus" value="3">
+                                    <label class="form-check-label" for="rating_3plus">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        এবং উপরে
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary w-100 mt-3">ফিল্টার করুন</button>
+                        <button class="btn btn-outline-secondary w-100 mt-2">রিসেট করুন</button>
+                    </div>
+                </div>
+                
+                <!-- Services List -->
+                <div class="col-lg-9">
+                    <div class="services-header d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <h2>সেবাসমূহ</h2>
+                            <p>মোট <span class="fw-bold">৪০</span>টি সেবা পাওয়া গেছে</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <label for="sort_by" class="me-2">সাজানঃ</label>
+                            <select class="form-select" id="sort_by">
+                                <option value="relevance">প্রাসঙ্গিকতা</option>
+                                <option value="price_low">সর্বনিম্ন মূল্য</option>
+                                <option value="price_high">সর্বোচ্চ মূল্য</option>
+                                <option value="rating">সেরা রেটিং</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="services-list">
+                        <!-- Service Item 1 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="/public/images/service-1.jpg" alt="ইলেকট্রিক্যাল সার্ভিস">
+                            </div>
+                            <div class="service-info">
+                                <h3><a href="/service-details.html?id=1">বাসা-বাড়ি ও অফিসের ইলেকট্রিক্যাল সার্ভিস</a></h3>
+                                <div class="service-provider">
+                                    <img src="/public/images/provider-1.jpg" alt="সেবা প্রদানকারী">
+                                    <span>করিম মিয়া</span>
+                                </div>
+                                <div class="service-meta">
+                                    <div>
+                                        <i class="fas fa-map-marker-alt"></i> সুত্রাপুর
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-star"></i> ৪.৫ (১২৮ রিভিউ)
+                                    </div>
+                                </div>
+                                <p>বাসা-বাড়ি, অফিস কিংবা যেকোনো স্থাপনায় বিদ্যুতের কাজ, যেমন - নতুন সংযোগ স্থাপন, তার মেরামত, বৈদ্যুতিক সরঞ্জাম স্থাপন ও মেরামত ইত্যাদি।</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="service-price">
+                                        ৫০০ ৳
+                                    </div>
+                                    <a href="/service-details.html?id=1" class="btn btn-primary">বিস্তারিত দেখুন</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Item 2 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="/public/images/service-2.jpg" alt="প্লাম্বিং সার্ভিস">
+                            </div>
+                            <div class="service-info">
+                                <h3><a href="/service-details.html?id=2">পানির লাইন স্থাপন ও মেরামত সার্ভিস</a></h3>
+                                <div class="service-provider">
+                                    <img src="/public/images/provider-2.jpg" alt="সেবা প্রদানকার
+(Content truncated due to size limit. Use line ranges to read in chunks)

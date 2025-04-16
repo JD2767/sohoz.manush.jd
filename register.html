@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রেজিস্ট্রেশন - মানুষ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- Google Fonts - Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">সেবাসমূহ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/providers.html">সেবা প্রদানকারী</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                    <div class="language-switch">
+                        <button class="btn btn-sm btn-outline-light active" data-lang="bn">বাংলা</button>
+                        <button class="btn btn-sm btn-outline-light" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="/login.html" class="btn btn-outline-light me-2">লগইন</a>
+                        <a href="/register.html" class="btn btn-primary">রেজিস্ট্রেশন</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Registration Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো">
+                    <h2>রেজিস্ট্রেশন করুন</h2>
+                    <p>আপনার একাউন্ট তৈরি করুন</p>
+                </div>
+                
+                <div class="user-type-selection text-center mb-4">
+                    <div class="btn-group" role="group" aria-label="User Type Selection">
+                        <input type="radio" class="btn-check" name="user_type" id="client" value="client" checked>
+                        <label class="btn btn-outline-primary" for="client">সেবা গ্রহণকারী</label>
+                        
+                        <input type="radio" class="btn-check" name="user_type" id="provider" value="provider">
+                        <label class="btn btn-outline-primary" for="provider">সেবা প্রদানকারী</label>
+                    </div>
+                </div>
+                
+                <form class="auth-form needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="username">ইউজারনেম</label>
+                        <input type="text" class="form-control" id="username" placeholder="ইউজারনেম লিখুন" required>
+                        <div class="invalid-feedback">
+                            ইউজারনেম দিতে হবে
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">ইমেইল</label>
+                        <input type="email" class="form-control" id="email" placeholder="আপনার ইমেইল লিখুন" required>
+                        <div class="invalid-feedback">
+                            সঠিক ইমেইল দিতে হবে
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">মোবাইল নম্বর</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="আপনার মোবাইল নম্বর লিখুন" required>
+                        <div class="invalid-feedback">
+                            মোবাইল নম্বর দিতে হবে
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">পাসওয়ার্ড</label>
+                        <input type="password" class="form-control" id="password" placeholder="পাসওয়ার্ড লিখুন" required>
+                        <div class="invalid-feedback">
+                            পাসওয়ার্ড দিতে হবে
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm_password">পাসওয়ার্ড নিশ্চিত করুন</label>
+                        <input type="password" class="form-control" id="confirm_password" placeholder="পাসওয়ার্ড আবার লিখুন" required>
+                        <div class="invalid-feedback">
+                            পাসওয়ার্ড মিলতে হবে
+                        </div>
+                    </div>
+                    
+                    <!-- Service Provider Specific Fields (Hidden by default) -->
+                    <div id="provider_fields" style="display: none;">
+                        <hr>
+                        <h4 class="mb-3">সেবা প্রদানকারীর তথ্য</h4>
+                        
+                        <div class="form-group">
+                            <label for="full_name">পুরো নাম</label>
+                            <input type="text" class="form-control" id="full_name" placeholder="আপনার পুরো নাম লিখুন">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nid">জাতীয় পরিচয়পত্র নম্বর (NID)</label>
+                            <input type="text" class="form-control" id="nid" placeholder="আপনার NID নম্বর লিখুন">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">ঠিকানা</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="আপনার বর্তমান ঠিকানা লিখুন"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="area">এলাকা</label>
+                            <select class="form-select" id="area">
+                                <option value="" selected disabled>এলাকা নির্বাচন করুন</option>
+                                <option value="sutrapur">সুত্রাপুর</option>
+                                <option value="gendaria">গেন্ডারিয়া</option>
+                                <option value="jatrabari">যাত্রাবাড়ি</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service_category">সেবার ধরন</label>
+                            <select class="form-select" id="service_category">
+                                <option value="" selected disabled>সেবার ধরন নির্বাচন করুন</option>
+                                <option value="electrician">ইলেকট্রিশিয়ান</option>
+                                <option value="plumber">প্লাম্বার</option>
+                                <option value="carpenter">ফার্নিচার মিস্ত্রি</option>
+                                <option value="painter">রংমিস্ত্রি</option>
+                                <option value="cleaner">পরিচ্ছন্নতাকর্মী</option>
+                                <option value="gas_mechanic">গ্যাস মিস্ত্রি</option>
+                                <option value="construction">নির্মাণ শ্রমিক</option>
+                                <option value="transportation">পরিবহন কর্মী</option>
+                                <option value="welding">ওয়েল্ডিং মিস্ত্রি</option>
+                                <option value="doctor">ডাক্তার</option>
+                                <option value="nurse">নার্স</option>
+                                <option value="pharmacist">ফার্মাসিস্ট</option>
+                                <option value="grocery">মুদি দোকানি</option>
+                                <option value="market_vendor">কাঁচাবাজারের বিক্রেতা</option>
+                                <option value="cook">বাবুর্চি</option>
+                                <option value="domestic_helper">গৃহকর্মী</option>
+                                <option value="security">নিরাপত্তাকর্মী</option>
+                                <option value="delivery">অনলাইন ডেলিভারি কর্মী</option>
+                                <option value="mobile_technician">মোবাইল সার্ভিসিং টেকনিশিয়ান</option>
+                                <option value="general_labor">সাধারণ শ্রমিক</option>
+                                <option value="tailor">দর্জি</option>
+                                <option value="shoe_repairer">জুতা মেরামতকারী</option>
+                                <option value="barber">নাপিত/ক্ষৌরকার</option>
+                                <option value="beautician">বিউটিশিয়ান</option>
+                                <option value="laundry">লন্ড্রি/ধোপা</option>
+                                <option value="isp">ইন্টারনেট সার্ভিস প্রোভাইডার</option>
+                                <option value="computer_technician">কম্পিউটার সার্ভিসিং টেকনিশিয়ান</option>
+                                <option value="ac_mechanic">এয়ার কন্ডিশনার মেকানিক</option>
+                                <option value="refrigerator_mechanic">রেফ্রিজারেটর মেকানিক</option>
+                                <option value="washing_machine_mechanic">ওয়াশিং মেশিন মেকানিক</option>
+                                <option value="driver">মাইক্রোবাস/পিকআপ ভ্যান চালক</option>
+                                <option value="rickshaw_puller">রিকশাচালক</option>
+                                <option value="helper">বাস/টেম্পো হেল্পার</option>
+                                <option value="photocopy">ফটোকপি ও প্রিন্টিং</option>
+                                <option value="stationery">স্টেশনারি দোকান</option>
+                                <option value="lawyer">আইনজীবী</option>
+                                <option value="teacher">শিক্ষক/টিউটর</option>
+                                <option value="courier">কুরিয়ার সার্ভিস</option>
+                                <option value="event_planner">ইভেন্ট প্ল্যানার</option>
+                                <option value="translator">অনুবাদকারী</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">অভিজ্ঞতা (বছরে)</label>
+                            <input type="number" class="form-control" id="experience" min="0" placeholder="আপনার অভিজ্ঞতা বছরে লিখুন">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="profile_picture">প্রোফাইল ছবি</label>
+                            <input type="file" class="form-control" id="profile_picture" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bio">নিজের সম্পর্কে</label>
+                            <textarea class="form-control" id="bio" rows="3" placeholder="আপনার দক্ষতা ও অভিজ্ঞতা সম্পর্কে লিখুন"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="terms" required>
+                        <label class="form-check-label" for="terms">
+                            আমি <a href="/terms.html">ব্যবহারের শর্তাবলী</a> এবং <a href="/privacy.html">গোপনীয়তা নীতি</a> পড়েছি এবং সম্মত আছি
+                        </label>
+                        <div class="invalid-feedback">
+                            শর্তাবলী মেনে নিতে হবে
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">রেজিস্ট্রেশন করুন</button>
+                </form>
+                
+                <div class="auth-footer">
+                    <p>ইতিমধ্যে একাউন্ট আছে? <a href="/login.html">লগইন করুন</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <img src="/public/images/manush-logo-white.png" alt="মানুষ লোগো" class="footer-logo">
+                        <p>মানুষ হল ঢাকার সুত্রাপুর, গেন্ডারিয়া, যাত্রাবাড়ি এলাকার জন্য একটি অনলাইন সেবা প্ল্যাটফর্ম, যেখানে সেবা প্রদানকারী ও গ্রহণকারীরা সহজেই সংযোগ স্থাপন করতে পারেন।</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h3>দ্রুত লিঙ্ক</h3>
+                        <ul>
+                            <li><a href="/">হোম</a></li>
+                            <li><a href="/services.html">সেবাসমূহ</a></li>
+                            <li><a href="/providers.html">সেবা প্রদানকারী</a></li>
+                            <li><a href="/about.html">আমাদের সম্পর্কে</a></li>
+                            <li><a href="/contact.html">যোগাযোগ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h3>সেবাসমূহ</h3>
+                        <ul>
+                            <li><a href="/services.html?category=electrician">ইলেকট্রিশিয়ান</a></li>
+                            <li><a href="/services.html?category=plumber">প্লাম্বার</a></li>
+                            <li><a href="/services.html?category=carpenter">ফার্নিচার মিস্ত্রি</a></li>
+                            <li><a href="/services.html?category=painter">রংমিস্ত্রি</a></li>
+                            <li><a href="/services.html?category=cleaner">পরিচ্ছন্নতাকর্মী</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h3>যোগাযোগ করুন</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> সুত্রাপুর, ঢাকা-১১০০, বাংলাদেশ</p>
+                        <p><i class="fas fa-pho
+(Content truncated due to size limit. Use line ranges to read in chunks)

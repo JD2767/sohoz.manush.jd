@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পেমেন্ট - মানুষ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- Google Fonts - Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/images/manush-logo.png" alt="মানুষ লোগো" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">সেবাসমূহ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/providers.html">সেবা প্রদানকারী</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">আমাদের সম্পর্কে</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                    <div class="language-switch">
+                        <button class="btn btn-sm btn-outline-light active" data-lang="bn">বাংলা</button>
+                        <button class="btn btn-sm btn-outline-light" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="/login.html" class="btn btn-outline-light me-2">লগইন</a>
+                        <a href="/register.html" class="btn btn-primary">রেজিস্ট্রেশন</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="payment-container">
+                        <h2>পেমেন্ট করুন</h2>
+                        
+                        <!-- Booking Summary -->
+                        <div class="booking-summary">
+                            <h3>বুকিং সারসংক্ষেপ</h3>
+                            <div class="booking-details">
+                                <div class="service-info">
+                                    <img src="/public/images/service-1.jpg" alt="সার্ভিস ইমেজ">
+                                    <div>
+                                        <h4 id="service-title">বাসা-বাড়ি ও অফিসের ইলেকট্রিক্যাল সার্ভিস</h4>
+                                        <p>সেবা প্রদানকারী: <span id="provider-name">করিম মিয়া</span></p>
+                                    </div>
+                                </div>
+                                <div class="booking-info">
+                                    <div class="info-item">
+                                        <span>বুকিং তারিখ:</span>
+                                        <span id="booking-date">১৮ এপ্রিল, ২০২৫</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>বুকিং সময়:</span>
+                                        <span id="booking-time">সকাল ১০:০০</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span>ঠিকানা:</span>
+                                        <span id="booking-address">সুত্রাপুর, ঢাকা-১১০০</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Payment Methods -->
+                        <div class="payment-methods">
+                            <h3>পেমেন্ট পদ্ধতি নির্বাচন করুন</h3>
+                            <div class="payment-options">
+                                <div class="form-check payment-option">
+                                    <input class="form-check-input" type="radio" name="payment_method" id="bkash" value="bkash" checked>
+                                    <label class="form-check-label" for="bkash">
+                                        <img src="/public/images/bkash-logo.png" alt="বিকাশ">
+                                        <span>বিকাশ</span>
+                                    </label>
+                                </div>
+                                <div class="form-check payment-option">
+                                    <input class="form-check-input" type="radio" name="payment_method" id="nagad" value="nagad">
+                                    <label class="form-check-label" for="nagad">
+                                        <img src="/public/images/nagad-logo.png" alt="নগদ">
+                                        <span>নগদ</span>
+                                    </label>
+                                </div>
+                                <div class="form-check payment-option">
+                                    <input class="form-check-input" type="radio" name="payment_method" id="cash" value="cash">
+                                    <label class="form-check-label" for="cash">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>নগদ অর্থ</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- bKash Payment Form -->
+                        <div class="payment-form" id="bkash-form">
+                            <h3>বিকাশ পেমেন্ট</h3>
+                            <p>নিম্নলিখিত নম্বরে পেমেন্ট করুন:</p>
+                            <div class="payment-number">০১৯৭৭৭৭২৭৬৭</div>
+                            <p>পেমেন্ট করার পর, আপনার বিকাশ নম্বর এবং ট্রানজেকশন আইডি দিন:</p>
+                            <form id="bkash-payment-form">
+                                <div class="mb-3">
+                                    <label for="bkash_number" class="form-label">বিকাশ নম্বর</label>
+                                    <input type="text" class="form-control" id="bkash_number" placeholder="০১XXXXXXXXX" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bkash_transaction_id" class="form-label">ট্রানজেকশন আইডি</label>
+                                    <input type="text" class="form-control" id="bkash_transaction_id" placeholder="XXXXXXXXXX" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">পেমেন্ট নিশ্চিত করুন</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Nagad Payment Form -->
+                        <div class="payment-form" id="nagad-form" style="display: none;">
+                            <h3>নগদ পেমেন্ট</h3>
+                            <p>নিম্নলিখিত নম্বরে পেমেন্ট করুন:</p>
+                            <div class="payment-number">০১৯৭৭৭৭২৭৬৭</div>
+                            <p>পেমেন্ট করার পর, আপনার নগদ নম্বর এবং ট্রানজেকশন আইডি দিন:</p>
+                            <form id="nagad-payment-form">
+                                <div class="mb-3">
+                                    <label for="nagad_number" class="form-label">নগদ নম্বর</label>
+                                    <input type="text" class="form-control" id="nagad_number" placeholder="০১XXXXXXXXX" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nagad_transaction_id" class="form-label">ট্রানজেকশন আইডি</label>
+                                    <input type="text" class="form-control" id="nagad_transaction_id" placeholder="XXXXXXXXXX" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">পেমেন্ট নিশ্চিত করুন</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Cash Payment Form -->
+                        <div class="payment-form" id="cash-form" style="display: none;">
+                            <h3>নগদ অর্থ পেমেন্ট</h3>
+                            <p>আপনি সেবা গ্রহণের সময় নগদ অর্থ প্রদান করতে পারবেন।</p>
+                            <form id="cash-payment-form">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="cash_agreement" required>
+                                    <label class="form-check-label" for="cash_agreement">
+                                        আমি সেবা গ্রহণের সময় নগদ অর্থ প্রদান করব।
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">বুকিং নিশ্চিত করুন</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Payment Summary -->
+                <div class="col-lg-4">
+                    <div class="payment-summary">
+                        <h3>পেমেন্ট সারসংক্ষেপ</h3>
+                        <div class="summary-item">
+                            <span>সেবার মূল্য</span>
+                            <span id="service-price">৫০০ ৳</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>সার্ভিস ফি</span>
+                            <span id="service-fee">৫ ৳</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>মোট</span>
+                            <span id="total-amount">৫০৫ ৳</span>
+                        </div>
+                        <div class="payment-note">
+                            <p><i class="fas fa-info-circle"></i> প্রতি সেবার জন্য ৫ টাকা সার্ভিস ফি প্রযোজ্য।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <img src="/public/images/manush-logo-white.png" alt="মানুষ লোগো" class="footer-logo">
+                        <p>মানুষ হল ঢাকার সুত্রাপুর, গেন্ডারিয়া, যাত্রাবাড়ি এলাকার জন্য একটি অনলাইন সেবা প্ল্যাটফর্ম, যেখানে সেবা প্রদানকারী ও গ্রহণকারীরা সহজেই সংযোগ স্থাপন করতে পারেন।</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h3>দ্রুত লিঙ্ক</h3>
+                        <ul>
+                            <li><a href="/">হোম</a></li>
+                            <li><a href="/services.html">সেবাসমূহ</a></li>
+                            <li><a href="/providers.html">সেবা প্রদানকারী</a></li>
+                            <li><a href="/about.html">আমাদের সম্পর্কে</a></li>
+                            <li><a href="/contact.html">যোগাযোগ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h3>সেবাসমূহ</h3>
+                        <ul>
+                            <li><a href="/services.html?category=electrician">ইলেকট্রিশিয়ান</a></li>
+                            <li><a href="/services.html?category=plumber">প্লাম্বার</a></li>
+                            <li><a href="/services.html?category=carpenter">ফার্নিচার মিস্ত্রি</a></li>
+                            <li><a href="/services.html?category=painter">রংমিস্ত্রি</a></li>
+                            <li><a href="/services.html?category=cleaner">পরিচ্ছন্নতাকর্মী</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h3>যোগাযোগ করুন</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> সুত্রাপুর, ঢাকা-১১০০, বাংলাদেশ</p>
+                        <p><i class="fas fa-phone-alt"></i> +৮৮০১৯৭৭৭৭২৭৬৭</p>
+                        <p><i class="fas fa-envelope"></i> info@manush.com.bd</p>
+                        <div class="newsletter">
+                            <h4>নিউজলেটার</h4>
+                            <form>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="আপনার ইমেইল">
+                                    <button class="btn btn-primary" type="submit">সাবস্ক্রাইব</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; ২০২৫ মানুষ। সর্বস্বত্ব সংরক্ষিত।</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>
+                            <a href="/terms.html">ব্যবহারের শর্তাবলী</a> |
+                            <a href="/privacy.html">গোপনীয়তা নীতি</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script>
+        // Payment method selection
+        const paymentMethods = document.querySelectorAll('input[name="payment_method"]');
+        const bkashForm = document.getElementById('bkash-form');
+        const nagadForm = document.getElementById('nagad-form');
+        const cashForm = document.getElementById('cash-form');
+        
+        paymentMethods.forEach(method => {
+            method.addEventListener('change', function() {
+                // Hide all forms
+                bkashForm.style.display = 'none';
+                nagadForm.style.display = 'none';
+                cashForm.style.display = 'none';
+     
+(Content truncated due to size limit. Use line ranges to read in chunks)
